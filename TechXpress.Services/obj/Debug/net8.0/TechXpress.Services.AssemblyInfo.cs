@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechXpress.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5297658de68dabbef2ad761eb88fb224f9de7954")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb16642268cebfb96bf3c718c1775c5594276786")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechXpress.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechXpress.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
