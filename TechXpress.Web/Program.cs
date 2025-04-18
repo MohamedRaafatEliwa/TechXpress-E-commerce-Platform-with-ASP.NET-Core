@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TechXpress.Data;
 using TechXpress.Data.Models;
+using TechXpress.Data.Repositories;
+using TechXpress.Data.UoW;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,8 +17,15 @@ builder.Services.AddDbContext<TechXpressDbContext>(options =>
 );
 #endregion
 
+#region Dependency Injection
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+#endregion
+
 #region Identity
-    builder.Services.AddIdentity<AppUser, IdentityRole<int>>()
+builder.Services.AddIdentity<AppUser, IdentityRole<int>>()
         .AddEntityFrameworkStores<TechXpressDbContext>()
         .AddDefaultTokenProviders();
 #endregion
