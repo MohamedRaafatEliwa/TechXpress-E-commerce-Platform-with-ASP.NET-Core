@@ -10,7 +10,7 @@ namespace TechXpress.Data.Models
     public class Order:BaseEntity
     {
         [ForeignKey(nameof(AppUser))]
-        public required string UserId { get; set; } // FK from Identity
+        public required int UserId { get; set; } // FK from Identity
 
         public AppUser? User { get; set; }
 
@@ -18,6 +18,6 @@ namespace TechXpress.Data.Models
 
         public decimal TotalAmount { get; set; }
 
-        public required ICollection<OrderDetail> OrderDetails { get; set; }
+        public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
     }
 }

@@ -1,8 +1,25 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using TechXpress.Data;
+using TechXpress.Data.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+# region Connection String
+builder.Services.AddDbContext<TechXpressDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+#endregion
+
+#region Identity
+    builder.Services.AddIdentity<AppUser, IdentityRole<int>>()
+        .AddEntityFrameworkStores<TechXpressDbContext>()
+        .AddDefaultTokenProviders();
+#endregion
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

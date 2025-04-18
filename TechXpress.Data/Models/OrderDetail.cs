@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TechXpress.Data.Models
 {
-    public class OrderDetails:BaseEntity
+    public class OrderDetail:BaseEntity
     {
         [ForeignKey(nameof(Order))]
         public int OrderId { get; set; }
