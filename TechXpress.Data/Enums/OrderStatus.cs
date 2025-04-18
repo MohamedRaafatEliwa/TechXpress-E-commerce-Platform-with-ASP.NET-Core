@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace TechXpress.Data.Enums
 {
-    internal class OrderStatus
+    public enum OrderStatus
     {
+        Pending,       
+        Processing,    
+        Shipped,       
+        Delivered,     
+        Cancelled
     }
 }

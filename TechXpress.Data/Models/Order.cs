@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechXpress.Data.Enums;
 
 namespace TechXpress.Data.Models
 {
@@ -11,12 +12,14 @@ namespace TechXpress.Data.Models
     {
         [ForeignKey(nameof(AppUser))]
         public required int UserId { get; set; } // FK from Identity
+        public required string ShippingAddress { get; set; }
+        public decimal TotalAmount { get; set; }
 
+        public OrderStatus Status { get; set; } = OrderStatus.Pending;
         public AppUser? User { get; set; }
 
         public DateTime OrderDate { get; set; } = DateTime.Now;
 
-        public decimal TotalAmount { get; set; }
 
         public required ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
     }
