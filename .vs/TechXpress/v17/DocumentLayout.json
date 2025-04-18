@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|e:\\engineering\\depi\\depi-project\\techxpress\\techxpress.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|solutionrelative:techxpress.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|e:\\engineering\\depi\\depi-project\\techxpress\\techxpress.data\\techxpressdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|solutionrelative:techxpress.data\\techxpressdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|e:\\engineering\\depi\\depi-project\\techxpress\\techxpress.data\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|solutionrelative:techxpress.data\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|e:\\engineering\\depi\\depi-project\\techxpress\\techxpress.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2025FB3-2CF9-4DB8-9945-99BB06E5CC72}|TechXpress.Data\\TechXpress.Data.csproj|solutionrelative:techxpress.data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,73 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\Product.cs",
-              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Product.cs",
-              "RelativeToolTip": "TechXpress.Data\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:29:25.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\OrderDetail.cs",
-              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "TechXpress.Data\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:29:22.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\Order.cs",
-              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Order.cs",
-              "RelativeToolTip": "TechXpress.Data\\Models\\Order.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:29:08.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\AppUser.cs",
-              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\AppUser.cs",
-              "RelativeToolTip": "TechXpress.Data\\Models\\AppUser.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:28:52.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\Category.cs",
-              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Category.cs",
-              "RelativeToolTip": "TechXpress.Data\\Models\\Category.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:26:44.511Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
@@ -111,13 +46,74 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\Product.cs",
+              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Product.cs",
+              "RelativeToolTip": "TechXpress.Data\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:29:25.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\OrderDetail.cs",
+              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "TechXpress.Data\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:29:22.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\Order.cs",
+              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Order.cs",
+              "RelativeToolTip": "TechXpress.Data\\Models\\Order.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:29:08.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\AppUser.cs",
+              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\AppUser.cs",
+              "RelativeToolTip": "TechXpress.Data\\Models\\AppUser.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:28:52.606Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "TechXpress.Data\\Models\\Category.cs",
+              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\Category.cs",
+              "RelativeToolTip": "TechXpress.Data\\Models\\Category.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T16:26:44.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TechXpressDbContext.cs",
               "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\TechXpressDbContext.cs",
               "RelativeDocumentMoniker": "TechXpress.Data\\TechXpressDbContext.cs",
               "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\TechXpressDbContext.cs",
               "RelativeToolTip": "TechXpress.Data\\TechXpressDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAtwA4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwA4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T16:26:24.582Z",
               "EditorCaption": ""
