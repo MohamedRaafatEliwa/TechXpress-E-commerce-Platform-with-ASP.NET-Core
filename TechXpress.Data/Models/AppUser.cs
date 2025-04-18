@@ -20,7 +20,7 @@ namespace TechXpress.Data.Models
         public string? Address { get; set; }
         public string? ProfileImageUrl { get; set; }
 
-        public ICollection<Order> Orders { get; set; } = new List<Order>();
+        public ICollection<Order>? Orders { get; set; } = new List<Order>();
 
     }
 }
