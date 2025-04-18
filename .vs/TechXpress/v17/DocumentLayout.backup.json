@@ -54,7 +54,8 @@
               "RelativeToolTip": "TechXpress.Data\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:29:25.825Z"
+              "WhenOpened": "2025-04-18T16:29:25.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,9 +65,10 @@
               "RelativeDocumentMoniker": "TechXpress.Data\\Models\\OrderDetail.cs",
               "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\OrderDetail.cs",
               "RelativeToolTip": "TechXpress.Data\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:29:22.514Z"
+              "WhenOpened": "2025-04-18T16:29:22.514Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -78,7 +80,8 @@
               "RelativeToolTip": "TechXpress.Data\\Models\\Order.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:29:08.2Z"
+              "WhenOpened": "2025-04-18T16:29:08.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -88,9 +91,10 @@
               "RelativeDocumentMoniker": "TechXpress.Data\\Models\\AppUser.cs",
               "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Data\\Models\\AppUser.cs",
               "RelativeToolTip": "TechXpress.Data\\Models\\AppUser.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T16:28:52.606Z"
+              "WhenOpened": "2025-04-18T16:28:52.606Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
