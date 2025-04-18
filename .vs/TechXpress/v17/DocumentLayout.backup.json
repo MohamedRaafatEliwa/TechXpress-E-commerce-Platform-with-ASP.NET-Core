@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCE00A1D-88C7-45AC-8FAE-21D027924459}|TechXpress.Web\\TechXpress.Web.csproj|e:\\engineering\\depi\\depi-project\\techxpress\\techxpress.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FCE00A1D-88C7-45AC-8FAE-21D027924459}|TechXpress.Web\\TechXpress.Web.csproj|solutionrelative:techxpress.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FCE00A1D-88C7-45AC-8FAE-21D027924459}|TechXpress.Web\\TechXpress.Web.csproj|e:\\engineering\\depi\\depi-project\\techxpress\\techxpress.web\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{FCE00A1D-88C7-45AC-8FAE-21D027924459}|TechXpress.Web\\TechXpress.Web.csproj|solutionrelative:techxpress.web\\wwwroot\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE00A1D-88C7-45AC-8FAE-21D027924459}|TechXpress.Web\\TechXpress.Web.csproj|e:\\engineering\\depi\\depi-project\\techxpress\\techxpress.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FCE00A1D-88C7-45AC-8FAE-21D027924459}|TechXpress.Web\\TechXpress.Web.csproj|solutionrelative:techxpress.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TechXpress.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TechXpress.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-16T22:29:25.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Web\\wwwroot\\css\\bootstrap.min.css",
               "RelativeDocumentMoniker": "TechXpress.Web\\wwwroot\\css\\bootstrap.min.css",
@@ -39,19 +52,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-04-16T22:19:17.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TechXpress.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\Engineering\\DEPI\\DEPI-Project\\TechXpress\\TechXpress.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TechXpress.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-16T22:17:25.758Z",
               "EditorCaption": ""
             }
           ]

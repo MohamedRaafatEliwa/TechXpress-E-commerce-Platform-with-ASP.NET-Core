@@ -18,6 +18,6 @@ namespace TechXpress.Data.Models
 
         public decimal TotalAmount { get; set; }
 
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public required ICollection<OrderDetails> OrderDetails { get; set; }
     }
 }
