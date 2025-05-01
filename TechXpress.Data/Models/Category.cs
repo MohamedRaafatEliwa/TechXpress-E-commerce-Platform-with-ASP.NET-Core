@@ -11,6 +11,8 @@ namespace TechXpress.Data.Models
         public required string Name { get; set; }
         public required string Description { get; set; }
         public required string ImageUrl { get; set; }
+        public bool IsDeleted { get; set; } = false;
+
 
         public ICollection<Product>? Products { get; set; } = new List<Product>();
     }

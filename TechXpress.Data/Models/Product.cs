@@ -19,11 +19,19 @@ namespace TechXpress.Data.Models
 
         public required string ImageUrl { get; set; }
 
+        public bool IsDeleted { get; set; } = false;
+
+
         // FK
         [ForeignKey(nameof(Category))]
         public int CategoryId { get; set; }
 
+
+        [ForeignKey(nameof(Brand))]
+        public int BrandId { get; set; }
+
         // Navigation
         public virtual Category? Category { get; set; }
+        public virtual Brand? Brand { get; set; }
     }
 }
