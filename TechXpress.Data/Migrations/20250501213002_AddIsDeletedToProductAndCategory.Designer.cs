@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechXpress.Data;
 
@@ -11,9 +12,11 @@ using TechXpress.Data;
 namespace TechXpress.Data.Migrations
 {
     [DbContext(typeof(TechXpressDbContext))]
-    partial class TechXpressDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250501213002_AddIsDeletedToProductAndCategory")]
+    partial class AddIsDeletedToProductAndCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -244,33 +247,6 @@ namespace TechXpress.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("TechXpress.Data.Models.Brand", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("LogoUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Uuid")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Uuid")
-                        .IsUnique();
-
-                    b.ToTable("Brand");
-                });
-
             modelBuilder.Entity("TechXpress.Data.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -390,9 +366,6 @@ namespace TechXpress.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BrandId")
-                        .HasColumnType("int");
-
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
@@ -420,8 +393,6 @@ namespace TechXpress.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
 
@@ -514,19 +485,11 @@ namespace TechXpress.Data.Migrations
 
             modelBuilder.Entity("TechXpress.Data.Models.Product", b =>
                 {
-                    b.HasOne("TechXpress.Data.Models.Brand", "Brand")
-                        .WithMany("Products")
-                        .HasForeignKey("BrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("TechXpress.Data.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Brand");
 
                     b.Navigation("Category");
                 });
@@ -534,11 +497,6 @@ namespace TechXpress.Data.Migrations
             modelBuilder.Entity("TechXpress.Data.Models.AppUser", b =>
                 {
                     b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("TechXpress.Data.Models.Brand", b =>
-                {
-                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("TechXpress.Data.Models.Category", b =>
