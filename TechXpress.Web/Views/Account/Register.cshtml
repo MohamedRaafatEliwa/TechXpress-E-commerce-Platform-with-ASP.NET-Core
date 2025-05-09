@@ -1,0 +1,11 @@
+﻿@model TechXpress.Web.ViewModels.RegisterVM
+
+<form asp-action="Register" method="post">
+    <input asp-for="FirstName" placeholder="First Name" />
+    <input asp-for="LastName" placeholder="Last Name" />
+    <input asp-for="Email" placeholder="Email" />
+    <input asp-for="Password" type="password" placeholder="Password" />
+    <input asp-for="ConfirmPassword" type="password" placeholder="Confirm Password" />
+    <input asp-for="Address" placeholder="Address (Optional)" />
+    <button type="submit">Register</button>
+</form>
