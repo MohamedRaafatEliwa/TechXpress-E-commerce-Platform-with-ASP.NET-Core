@@ -1,0 +1,130 @@
+﻿@model IEnumerable<Product>
+@{
+    Layout = "_Customer";
+}
+<section style="background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.9)), url(../../../../wwwroot/Templet/img/baner-1.png) !important;" class="pt-2 pb-5">
+    <header class=" py-3 border border-secondary rounded-pill w-75 m-auto" style="background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.9)), url(../../../../wwwroot/Templet/img/baner-1.png) !important;">
+        <div class="container px-4 px-lg-5 ">
+            <div class="text-center d-flex align-items-center justify-content-center text-white ">
+                <h1 class="text-danger fw-bolder" style="color:#81c408 !important;">All of Products </h1>
+            </div>
+        </div>
+    </header>
+</section>
+
+<div class="container mt-5">
+<div class=" justify-content-between align-items-center my-3">
+    <form asp-action="AllProducts" class=" row justify-content-center align-items-center my-3">
+        <div class="col-md-11">
+            <input type="text" name="SearchInp" class="form-control" placeholder="Search Name..." />
+        </div>
+        <div class="col-md-1">
+            <input type="submit" class="btn btn-success" value="Search" />
+        </div>
+    </form>
+    </div>
+</div>
+
+<div class="categories container">
+     <div class="row" style="display:flex; align-items:center; justify-content:space-between;">
+     <div class="col-md-1">
+            <form asp-action="AllProducts" class=" row justify-content-center align-items-center ">
+                <div class="col-md-11">
+                    <input hidden type="text" class="form-control" />
+                </div>
+                <div class="col-md-1">
+                    <input type="submit" class="btn btn-secondary" value="All Products" />
+                </div>
+            </form>
+        </div>
+     <div class=" col-md-1 ">
+        <form asp-action="AllProducts" class=" row justify-content-center align-items-center my-3">
+            <div class="col-md-11">
+                <input hidden type="text" value="Laptops" name="category" class="form-control" />
+            </div>
+            <div class="col-md-1">
+                <input type="submit" class="btn btn-secondary" value="Laptops" />
+            </div>
+        </form>
+    </div>
+     <div class=" col-md-1 ">
+        <form asp-action="AllProducts" class=" row justify-content-center align-items-center my-3">
+            <div class="col-md-11">
+                    <input hidden type="text" value="Smart Phones" name="category" class="form-control" />
+            </div>
+            <div class="col-md-1">
+                    <input type="submit" class="btn btn-secondary" value="Smart Phones" />
+            </div>
+        </form>
+    </div>
+     <div class=" col-md-1  ">
+        <form asp-action="AllProducts" class=" row justify-content-center align-items-center my-3">
+            <div class="col-md-11">
+                    <input hidden type="text" value="Smart Watches" name="category" class="form-control" />
+            </div>
+            <div class="col-md-1">
+                    <input type="submit" class="btn btn-secondary" value="Smart Watches" />
+            </div>
+        </form>
+    </div>
+     <!-- <div class=" col-md-1  ">
+        <form asp-action="AllProducts" class=" row justify-content-center align-items-center my-3">
+            <div class="col-md-11">
+                    <input hidden type="text" value="Science" name="category" class="form-control" />
+            </div>
+            <div class="col-md-1">
+                    <input type="submit" class="btn btn-secondary" value="Science" />
+            </div>
+        </form>
+    </div>
+     <div class=" col-md-1  " style="margin-right:140px !important;">
+        <form asp-action="AllProducts" class=" row justify-content-center align-items-center my-3">
+            <div class="col-md-11">
+                    <input hidden type="text" value="Historical fiction" name="category" class="form-control" />
+            </div>
+            <div class="col-md-1">
+                    <input type="submit" class="btn btn-secondary" value="Historical fiction" />
+            </div>
+        </form>
+    </div>
+        -->
+ </div>
+</div>
+
+
+
+<div class="container pb-5 pt-3" id="PRODUCTS">
+    <div class="tab-class text-center">
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <div class="row g-4">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="rounded position-relative fruite-item border border-secondary">
+                                        <div class="fruite-img">
+                                            <a href="/Customer/Home/Details/@item.Id"><img src="~/@item.Img" style="width:320px !important ; height:300px !important;" class="img-fluid w-100 rounded-top" alt=""></a>
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@item.Category.Name</div>
+                                        <div class="p-3 border border-secondary border-top-0 rounded-bottom " style="min-height:300px !important;">
+                                            <h3 class="fw-bold mb-4">@item.Name</h3>
+                                            <p>@item.Description</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-5 fw-bold mb-0 ">$@item.Price</p>
+                                                <a href="/Customer/Home/Details/@item.Id" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,21 @@
+﻿@model int
+@{
+    ViewData["Title"] = "OrderConfirmation";
+    Layout = "~/Views/Shared/_Customer.cshtml";
+}
+
+<header class=" py-3 border border-top-1 rounded-pill w-75 m-auto" style=" ">
+    <div class="container pt-4 px-lg-5 ">
+        <div class="text-center d-flex align-items-center justify-content-center text-white ">
+            <h4 class="text-danger fw-bolder" style="color:#81c408 !important;">Congratulations Your Order has been reserved Successfully  ...!</h4>
+
+        </div>
+        <h4 class="text-center fw-bolder" style="color:#81c408 !important;">Your Order Number : @Model</h4>
+    </div>
+</header>
+
+<center class="Container ">
+    <div class="row d-flex align-items-center justify-content-center" style="height:74vh">
+        <img src="~/Templet/Images/thank_you.png" style="width:350px !important; height:350px !important" alt="Alternate Text" />
+    </div>
+</center>

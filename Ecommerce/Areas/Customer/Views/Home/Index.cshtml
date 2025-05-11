@@ -1,0 +1,187 @@
+﻿@model IEnumerable<Product>
+@using X.PagedList.Mvc.Core
+@using X.PagedList
+
+<!-- Modal Search Start -->
+
+<div style="padding-bottom:30px; display:flex;align-items:center;justify-content:center; height:88vh; background: url('@Url.Content("~/Images/libb.jpg")') no-repeat; background-size: 100% 100%; !important;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-md-12 col-lg-8">
+                <h4 id="line1" class="mb-3 text-secondary fw-bold" style="color:#6fa30b !important ; padding-top: 3rem "> </h4>
+                <h1 id="line2" class="mb-3 display-3 text-primary fw-bold" style="color:#6fa30b !important"></h1>
+                <p id="line3" class="mb-5 text-primary fw-bold" style="color:#6fa30b !important ; font-size:25px"></p>
+                <a href="#PRODUCTS" id="shopNowBtn" class="btn btn-primary border-2 border-secondary py-3 px-5 rounded-pill" style="top: 0; right: 25%;">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid featurs py-5">
+    <div class="container py-5">
+        <h1 class="fw-bold mb-5" style="font:45px !important ;">Some Of Our Features</h1>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fas fa-car-side fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>Small Shipping Cost</h5>
+                        <p class="mb-0"> 50% Discount on order over $300</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fas fa-user-shield fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>Security Payment</h5>
+                        <p class="mb-0">100% security payment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fas fa-exchange-alt fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>30 Day Return</h5>
+                        <p class="mb-0">30 day money guarantee</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fa fa-phone-alt fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>24/7 Support</h5>
+                        <p class="mb-0">Support every time fast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* products  *@
+
+<div class="container py-5" id="PRODUCTS">
+    <div class="tab-class text-center">
+        <div class="row g-4">
+            <div class="col-lg-4 text-start">
+                <h1 class="fw-bold mb-5" style="font:45px !important ;">Our Products</h1>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <div class="row g-4">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <div class="rounded position-relative fruite-item border border-secondary">
+                                        <div class="fruite-img">
+                                            <a href="/Customer/Home/Details/@item.Id">
+                                                <img src="~/@item.Img" style="width:320px !important ; height:300px !important;" class="img-fluid w-100 rounded-top" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@item.Category.Name</div>
+                                        <div class="p-4 border border-secondary rounded-bottom" style="height:280px !important;">
+                                            <h3 class="fw-bold mb-4">@item.Name</h3>
+
+                                            <p class="product-description">@item.Description</p>
+                                            <button class="show-more-btn btn btn-sm btn-link p-0">Show More</button>
+
+                                            <div class="d-flex justify-content-between flex-lg-wrap mt-3">
+                                                <p class="text-dark fs-5 fw-bold mb-0 ">$@item.Price</p>
+                                                <a href="/Customer/Home/Details/@item.Id" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to Cart
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .product-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        height: 4.5em;
+        transition: all 0.3s ease;
+    }
+
+        .product-description.expanded {
+            -webkit-line-clamp: unset;
+            height: auto;
+        }
+
+    .show-more-btn {
+        margin-top: 5px;
+        color: #007bff;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+    }
+</style>
+
+<script>
+    const lines = [
+        { id: "line1", text: "All original copies", delay: 0 },
+        { id: "line2", text: "You Will Find All The Products You want.", delay: 200 },
+        { id: "line3", text: "Technology Hack You Won't Get.", delay: 100 }
+    ];
+
+    function typeLine(id, text, delay) {
+        setTimeout(() => {
+            let i = 0;
+            const interval = setInterval(() => {
+                document.getElementById(id).textContent += text[i];
+                i++;
+                if (i === text.length) clearInterval(interval);
+            }, 50);
+        }, delay);
+    }
+
+    lines.forEach(line => {
+        typeLine(line.id, line.text, line.delay);
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById("shopNowBtn");
+        setTimeout(() => {
+            btn.classList.add("fade-slide-in");
+        }, 4500);
+
+        // Show more logic
+        const buttons = document.querySelectorAll('.show-more-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const desc = this.previousElementSibling;
+                desc.classList.toggle('expanded');
+                this.textContent = desc.classList.contains('expanded') ? 'Show Less' : 'Show More';
+            });
+        });
+    });
+</script>
